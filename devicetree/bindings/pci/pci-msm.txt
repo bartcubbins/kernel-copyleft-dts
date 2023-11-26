@@ -298,6 +298,11 @@ interconnects:
 	Definition: L1.2 LTR threshold value to be multipled with scale to
 		define L1.2 latency tolerance reporting (LTR)
 
+- qcom,device-vendor-id:
+	Usage: optional
+	Value type: <u32>
+	Definition: Support Device-Vendor Id
+
 - qcom,slv-addr-space-size:
 	Usage: required
 	Value type: <u32>
@@ -391,6 +396,21 @@ interconnects:
 	Value type : <bool>
 	Definition: Enable to notify the client driver for recovery when
 		config space is not accessible
+
+- qcom,parf-debug-reg:
+	Usage: optional
+	value type: <u32>
+	Definition: Offset from PCIe parf base to dump pcie parf status registers
+
+- qcom,dbi-debug-reg:
+        Usage: optional
+        value type: <u32>
+        Definition: Offset from PCIe DBI base to dump pcie DBI status registers
+
+- qcom,phy-debug-reg:
+        Usage: optional
+        value type: <u32>
+        Definition: Offset from PCIe PHY base to dump pcie phy status registers
 
 ==============
 Root port node
